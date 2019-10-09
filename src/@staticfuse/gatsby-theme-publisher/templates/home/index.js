@@ -31,7 +31,7 @@ const Home = ({ location }) => {
       <Box bg="gray.800" borderBottom="1px solid #F5EF09" mb={4}>
         <BackgroundImage
           fluid={bgImage.file.childImageSharp.fluid}
-          style={{ padding: "2rem .5rem", backgroundPosition: "top right" }}
+          style={{ padding: "2rem 1rem", backgroundPosition: "top right" }}
         >
           <Box
             m="auto"
@@ -42,7 +42,7 @@ const Home = ({ location }) => {
           >
 
             <Box w={["100%", "60%", "45%"]} float={["none", "none", "right"]} p={2} m="auto" order={["1","1","2"]}>
-                <Image src={LogosImage} display="block" alt="WordPress and Gatsby Logos" />
+                <Image src={LogosImage} display="block" alt="WordPress and Gatsby Logos" opacity=".8" />
             </Box>
             
             <Box w={["100%", "100%", "55%"]} color="#fff" mb={[6,6,"0"]}>
@@ -50,7 +50,7 @@ const Home = ({ location }) => {
               <Heading
                 as="h1"
                 fontWeight="600"
-                fontSize={["2rem","4rem"]}
+                fontSize={["3.5rem","4rem"]}
                 color="primary"
                 lineHeight="1.1"
               >
