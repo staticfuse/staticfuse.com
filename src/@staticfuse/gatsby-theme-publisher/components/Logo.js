@@ -6,48 +6,37 @@ import { Box } from "@chakra-ui/core"
 const Logo = ({ data }) => {
   const imageData = useStaticQuery(graphql`
     {
-      file(absolutePath: {regex: "/src/"}, name: {eq: "site-logo"}) {
+      file(absolutePath: {regex: "/^((?!node_modules).)*$/"}, name: {eq: "site-logo"}) {
         childImageSharp {
-          fixed(width: 150, height: 150) {
-            base64
-            tracedSVG
-            aspectRatio
-            width
-            height
-            src
-            srcSet
-            srcWebp
-            srcSetWebp
-            originalName
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
     }
   `)
   return (
-    <Box position={["absolute", "absolute", "static"]} left="0" right="0" m={["auto", "auto","0"]} w="50px">
+    <Box position={["absolute", "absolute", "static"]} left="0" right="0" m={["auto", "auto","0"]} w="200px" maxW="100%" h="50px">
       <Link
         to="/"
-        className="h-10 overflow-hidden block"
         style={{
           overflow: "hidden",
-          height: "50px",
-          width: "50px",
-          display: "block",
-          padding: "5px"
+          height: "100%",
+          width: "100%",
+          padding: "7px 0",
+          display: "block"
         }}
         rel="home"
         itemProp="url"
       >
         <Img
-          fixed={imageData.file.childImageSharp.fixed}
+          fluid={imageData.file.childImageSharp.fluid}
           alt="Site Logo"
           className="site-logo"
           itemProp="logo"
           style={{
-            display: "block",
-            maxWidth: "100%",
-            height: "100%",
+            height: "auto",
+            // width: "100%"
           }}
         />
       </Link>

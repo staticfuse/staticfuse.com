@@ -11,10 +11,10 @@ module.exports = {
       resolve: `@staticfuse/gatsby-theme-publisher`,
       options: {
         starterPages: true,
-        mailChimpEndpoint: 0,
+        mailChimpEndpoint: "https://gmail.us4.list-manage.com/subscribe/post?u=914ae019ecb5ca02710493cdd&amp;id=d7c63b789d",
         dynamicComments: 1,
         gaTrackingId: 0,
-        wordPressUrl: `https://staticfuse.wpengine.com`,
+        wordPressUrl: `https://data.staticfuse.com`,
         blogURI: '/blog'
       },
     },
