@@ -1,5 +1,5 @@
 import theme from "@staticfuse/gatsby-theme-publisher/src/theme/theme"
-console.log(theme)
+
 const publisherTheme = {
   ...theme,
   colors: {
