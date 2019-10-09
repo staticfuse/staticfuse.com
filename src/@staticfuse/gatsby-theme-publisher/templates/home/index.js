@@ -1,21 +1,20 @@
-import React from "react"
-import Layout from '@staticfuse/gatsby-theme-publisher/src/components/Layout'
-import SEO from '@staticfuse/gatsby-theme-publisher/src/components/SEO'
-import { Box, Text, Heading, Button, Icon } from '@chakra-ui/core'
-import useSiteMetadata from '@staticfuse/gatsby-theme-publisher/src/hooks/use-site-metadata'
-import { useStaticQuery, graphql } from 'gatsby'
-import BackgroundImage from 'gatsby-background-image'
+import React from "react";
+import Layout from "@staticfuse/gatsby-theme-publisher/src/components/Layout";
+import SEO from "@staticfuse/gatsby-theme-publisher/src/components/SEO";
+import { Box, Text, Heading, Button, Icon, Image } from "@chakra-ui/core";
+import { useStaticQuery, graphql } from "gatsby";
+import BackgroundImage from "gatsby-background-image";
+import LogosImage from "../../../../images/wp-gatsby-logos.png"
 
 const Home = ({ location }) => {
-
   const doSomething = e => {
-    console.log(e)
-    alert('Button clicked')
-  }
+    console.log(e);
+    alert("Button clicked");
+  };
 
-  const imageData = useStaticQuery(graphql`
+  const bgImage = useStaticQuery(graphql`
     {
-      file(name: { eq: "wp-plus-gatsby-90" }) {
+      file(name: { eq: "90s-bg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -23,29 +22,36 @@ const Home = ({ location }) => {
         }
       }
     }
-  `)
+  `);
+
   return (
     <Layout location={{ location }} fullWidth="true">
       <SEO title="Home" />
 
       <Box bg="gray.800" borderBottom="1px solid #F5EF09" mb={4}>
         <BackgroundImage
-          fluid={imageData.file.childImageSharp.fluid}
-          style={{ padding: '4rem .5rem', backgroundPosition: 'top right' }}
+          fluid={bgImage.file.childImageSharp.fluid}
+          style={{ padding: "2rem .5rem", backgroundPosition: "top right" }}
         >
           <Box
             m="auto"
-            display={['block', 'flex']}
-            maxW="4xl"
+            display={["block","block", "flex"]}
+            maxW="6xl"
             justifyContent="space-between"
-            align="center"
+            alignItems="center"
           >
-            <Box w={['100%', '65%']} color="#fff" mb={[6, '0']}>
+
+            <Box w={["100%", "60%", "45%"]} float={["none", "none", "right"]} p={2} m="auto" order={["1","1","2"]}>
+                <Image src={LogosImage} display="block" alt="WordPress and Gatsby Logos" />
+            </Box>
+            
+            <Box w={["100%", "100%", "55%"]} color="#fff" mb={[6,6,"0"]}>
+                
               <Heading
                 as="h1"
                 fontWeight="600"
-                fontSize="4rem"
-                color="#444"
+                fontSize={["2rem","4rem"]}
+                color="primary"
                 lineHeight="1.1"
               >
                 WordPress + Gatsby
@@ -57,13 +63,14 @@ const Home = ({ location }) => {
                 onClick={doSomething}
                 bg="pink"
                 rightIcon="arrow-forward"
-                w={['100%', 'auto']}
-                mb={[2, '0']}
+                w={["100%", "auto"]}
+                mb={[2, "0"]}
                 rounded="full"
               >
                 Get Started
               </Button>
             </Box>
+
           </Box>
         </BackgroundImage>
       </Box>
@@ -105,7 +112,7 @@ const Home = ({ location }) => {
       <Box className="row-wrapper" bg="#e4f5fe" py={8} px={2}>
         <Box maxW="4xl" m="auto">
           <Box
-            display={['block', 'grid']}
+            display={["block", "grid"]}
             gridTemplateColumns="repeat(auto-fit, minmax(150px, 1fr))"
             gridColumnGap="4%"
             my={8}
@@ -207,7 +214,7 @@ const Home = ({ location }) => {
         </Box>
       </Box>
     </Layout>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
