@@ -28,7 +28,7 @@ const Home = ({ location }) => {
     <Layout location={{ location }} fullWidth="true">
       <SEO title="Home" />
 
-      <Box bg="gray.800" borderBottom="1px solid #ccc" mb={4}>
+      <Box bg="gray.800" borderBottom="1px solid #F5EF09" mb={4}>
         <BackgroundImage
           fluid={imageData.file.childImageSharp.fluid}
           style={{ padding: '4rem .5rem', backgroundPosition: 'top right' }}
