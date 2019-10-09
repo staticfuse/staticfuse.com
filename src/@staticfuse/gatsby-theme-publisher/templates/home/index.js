@@ -16,7 +16,7 @@ const Home = ({ location }) => {
     {
       file(name: { eq: "90s-bg" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
