@@ -31,7 +31,7 @@ const Home = ({ location }) => {
       <Box bg="gray.800" borderBottom="1px solid #F5EF09" mb={4}>
         <BackgroundImage
           fluid={bgImage.file.childImageSharp.fluid}
-          style={{ padding: "2rem 1rem", backgroundPosition: "top right" }}
+          style={{ padding: "2rem 1rem", backgroundPosition: "top" }}
         >
           <Box
             m="auto"
