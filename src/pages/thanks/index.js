@@ -17,14 +17,10 @@ const About = ({ location }) => {
           lineHeight="1.1"
           mb={4}
         >
-          About Us
+          Thanks!
         </Heading>
         <Text fontSize="md" fontWeight="500" color="gray.400">
-        Static Fuse is a collaboration between Scott Bolinger and Justin Hall. Justin is a full stack developer at SendGrid, and Scott is the co-founder of <a href="https://apppresser.com" target="_blank">AppPresser</a>.
-        </Text>
-
-        <Text color="gray.500" borderTop="1px solid #eee" py={4}>
-            Our goal is to help freelancers and agencies put another tool in their toolbox to help their clients. We firmly believe JAMstack is a big part of the future of the web, and more WordPress sites need to be using this amazing technology.
+        We'll get back to you shortly.
         </Text>
       </Box>
 

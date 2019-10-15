@@ -27,15 +27,22 @@ const Contact = ({ location }) => {
           Contact Us
         </Heading>
 
-        <Stack spacing={3}>
-          <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form
+          name="contact"
+          method="post"
+          action="/thanks"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <Stack spacing={3}>
             <input type="hidden" name="form-name" value="contact" />
-            <Input placeholder="Name" />
-            <Input placeholder="Email" />
-            <Textarea placeholder="Message" />
-            <Button variantColor="blue">Submit</Button>
-          </form>
-        </Stack>
+            <input style={{ display: "none" }} name="bot-field" />
+            <Input placeholder="Name" name="name" />
+            <Input placeholder="Email" name="email" />
+            <Textarea placeholder="Message" name="message" />
+            <Button variantColor="blue" type="submit">Submit</Button>
+          </Stack>
+        </form>
       </Box>
     </Layout>
   );
