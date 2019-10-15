@@ -1,7 +1,7 @@
 import React from 'react'
-import Layout from '../../components/Layout'
-import SEO from '../../components/SEO'
-import { Box, Text, Heading, Icon } from '@chakra-ui/core'
+import Layout from '@staticfuse/gatsby-theme-publisher/src/components/Layout'
+import SEO from '@staticfuse/gatsby-theme-publisher/src/components/SEO'
+import { Box, Text, Heading } from '@chakra-ui/core'
 
 const About = ({ location }) => {
   return (
