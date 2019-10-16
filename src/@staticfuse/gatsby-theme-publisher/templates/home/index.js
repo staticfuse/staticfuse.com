@@ -59,7 +59,7 @@ const Home = ({ location }) => {
                 color="primary"
                 lineHeight="1.1"
               >
-                WordPress + Gatsby "Framework"
+                A Framework For Headless WordPress with Gatsby
               </Heading>
               <Text color="#444" fontSize="md" mb={8} fontWeight="500">
                 Themes, plugins, and workflow tips for headless WordPress with
