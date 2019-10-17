@@ -12,7 +12,9 @@ const publisherTheme = {
     // navLink: "#ffffff",
     // headerBg: theme.colors.orange["500"],
     pink: "#f967b8",
-    buttonBg: "blue"
+    buttonBg: "#f967b8",
+    buttonText: "#fff",
+    optinText: "#1eb4f3"
   },
 }
 

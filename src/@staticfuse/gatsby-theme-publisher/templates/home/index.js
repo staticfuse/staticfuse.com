@@ -5,12 +5,13 @@ import { Box, Text, Heading, Button, Icon, Image } from "@chakra-ui/core";
 import { useStaticQuery, graphql, navigate } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 import LogosImage from "../../../../images/wp-gatsby-logos.png";
+import PublisherHero from "../../../../images/publisher-hero.jpg";
+import BlogOptin from "@staticfuse/gatsby-theme-publisher/src/components/BlogOptin";
 
 const Home = ({ location }) => {
-
   const bgImage = useStaticQuery(graphql`
     {
-      file(name: { eq: "90s-bg" }) {
+      file(name: { eq: "hero-bg-90s" }) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid
@@ -24,7 +25,7 @@ const Home = ({ location }) => {
     <Layout location={{ location }} fullWidth="true">
       <SEO title="Home" />
 
-      <Box bg="gray.800" borderBottom="1px solid #F5EF09" mb={4}>
+      <Box bg="gray.800" borderBottom="1px solid #F5EF09">
         <BackgroundImage
           fluid={bgImage.file.childImageSharp.fluid}
           style={{ padding: "2rem 1rem", backgroundPosition: "top" }}
@@ -54,18 +55,20 @@ const Home = ({ location }) => {
             <Box w={["100%", "100%", "55%"]} color="#fff" mb={[6, 6, "0"]}>
               <Heading
                 as="h1"
-                fontWeight="600"
-                fontSize="3.2rem"
+                fontWeight="800"
+                fontSize="2.5rem"
                 color="primary"
                 lineHeight="1.1"
+                textTransform="uppercase"
+                fontStyle="italic"
+                textShadow="-2px 2px rgba(255, 255, 0, 0.54)"
               >
-                A Framework For Headless WordPress with Gatsby
+                A Framework for Headless WordPress With Gatsby
               </Heading>
               <Text color="#444" fontSize="md" mb={8} fontWeight="500">
-                Themes, plugins, and workflow tips for headless WordPress with
-                Gatsby.
+                Themes, plugins, and workflow tips to make headless WordPress easy for freelancers and agencies.
               </Text>
-              <Button
+              {/* <Button
                 onClick={ () => navigate('/blog/how-to-build-headless-wordpress-sites-with-gatsby/')}
                 bg="pink"
                 rightIcon="arrow-forward"
@@ -74,10 +77,45 @@ const Home = ({ location }) => {
                 rounded="full"
               >
                 Start Here
-              </Button>
+              </Button> */}
             </Box>
           </Box>
         </BackgroundImage>
+      </Box>
+
+      <Box bg="gray.50" p={4} mb={6}>
+        <Box maxW="4xl" m="auto">
+          <BlogOptin description="Get our full guide on building headless WordPress sites with Gatsby. Enter your email below." />
+        </Box>
+      </Box>
+
+      <Box maxW="4xl" m="auto" px={2}>
+        <Box
+          display={["block", "flex"]}
+          justifyContent="space-between"
+          alignItems="center"
+          pt={4}
+        >
+          <Box width={["100%", "48%"]} mb={2}>
+            <Image
+              src={PublisherHero}
+              alt="Screenshot of the publisher theme"
+              display="block"
+            />
+          </Box>
+          <Box width={["100%", "48%"]}>
+            <Heading lineHeight="1.2" color="headings" fontSize="2xl">
+              Gatsby Publisher Theme
+            </Heading>
+            <Text color="gray.500">
+              The Publisher theme is a customizable framework that helps you
+              create a static site from your WordPress data. It does all the heavy lifting so you can focus on designing and customizing your site. Learn how to use it in our tutorial.
+            </Text>
+            <Button onClick={ () => navigate('/blog/how-to-build-headless-wordpress-sites-with-gatsby/')} rounded="full" variant="outline" variantColor="blue" rightIcon="arrow-forward">
+              Learn More
+            </Button>
+          </Box>
+        </Box>
       </Box>
 
       <Box className="row-wrapper" py={4} px={2}>
@@ -96,10 +134,12 @@ const Home = ({ location }) => {
                 fontWeight="400"
                 color="gray.600"
               >
-                <Icon name="star" size="15px" color="blue.500" /> Publisher Theme
+                Publisher
+                Theme
               </Heading>
               <Text color="gray.500">
-                The Gatsby Publisher theme serves as the base for headless WordPress development. It is opinionated and customizable.
+                The Gatsby Publisher theme serves as the base for headless
+                WordPress development. It is opinionated and customizable.
               </Text>
             </Box>
 
@@ -111,10 +151,12 @@ const Home = ({ location }) => {
                 fontWeight="400"
                 color="gray.600"
               >
-                <Icon name="email" size="15px" color="blue.500" /> Gatsby Toolkit Plugin
+                Gatsby
+                Toolkit Plugin
               </Heading>
               <Text color="gray.500">
-                The Gatsby Toolkit plugin for WordPress handles automated deployment for your site. More features are coming soon.
+                The Gatsby Toolkit plugin for WordPress handles automated
+                deployment for your site. More features are coming soon.
               </Text>
             </Box>
 
@@ -126,10 +168,11 @@ const Home = ({ location }) => {
                 fontWeight="400"
                 color="gray.600"
               >
-                <Icon name="bell" size="15px" color="blue.500" /> Open Source
+                Open Source
               </Heading>
               <Text color="gray.500">
-                Our tools are open source, our goal is to educate and help modernize WordPress websites.
+                Our tools are open source, our goal is to educate and help
+                modernize WordPress websites.
               </Text>
             </Box>
           </Box>
@@ -139,7 +182,7 @@ const Home = ({ location }) => {
       <Box bg="gray.100" py={6}>
         <Box maxW="4xl" m="auto" px={2}>
           <Box>
-            <Heading as="h2" lineHeight="1.2" color="blue.500" fontSize="2xl">
+            <Heading as="h2" lineHeight="1.2" color="headings" fontSize="2xl">
               Why Static Fuse?
             </Heading>
             <Text color="gray.500">
@@ -147,14 +190,15 @@ const Home = ({ location }) => {
               further along, we found it difficult to put all the pieces that we
               wanted together. We would grab a starter WordPress theme and some
               plugins, but it felt like a patchwork quilt, not a solid base that
-              we’d use again.</Text>
-              <Text color="gray.500">
-              We wanted to create a line of themes and plugins
-              that are opinionated, reliable, and reusable. Working with
-              headless WordPress, there are other concerns like deployment and
+              we’d use again.
+            </Text>
+            <Text color="gray.500">
+              We wanted to create a line of themes and plugins that are
+              opinionated, reliable, and reusable. Working with headless
+              WordPress, there are other concerns like deployment and
               integrations. These are all problems we’d like to solve, in a way
-              that can be reliable for freelancers and agencies.</Text>
-            
+              that can be reliable for freelancers and agencies.
+            </Text>
           </Box>
         </Box>
       </Box>
