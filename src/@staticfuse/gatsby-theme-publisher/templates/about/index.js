@@ -20,7 +20,7 @@ const About = ({ location }) => {
           About Us
         </Heading>
         <Text fontSize="md" fontWeight="500" color="gray.400">
-        Static Fuse is a collaboration between Scott Bolinger and Justin Hall. Justin is a full stack developer at SendGrid, and Scott is the co-founder of <a href="https://apppresser.com" target="_blank">AppPresser</a>.
+        Static Fuse is a collaboration between Scott Bolinger and Justin Hall. Justin is a full stack developer at SendGrid, and Scott is the co-founder of <a href="https://apppresser.com" target="_blank" rel="noopener noreferrer">AppPresser</a>.
         </Text>
 
         <Text color="gray.500" borderTop="1px solid #eee" py={4}>

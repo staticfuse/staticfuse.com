@@ -3,7 +3,7 @@ module.exports = {
     title: 'Static Fuse',
     description: 'Headless WordPress with Gatsby FTW.',
     author: 'Scott and Justin',
-    twitter: '@staticfuse',
+    twitter: 'staticfuse',
     siteUrl: `https://staticfuse.com`,
   },
   plugins: [

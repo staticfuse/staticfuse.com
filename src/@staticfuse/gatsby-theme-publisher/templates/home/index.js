@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "@staticfuse/gatsby-theme-publisher/src/components/Layout";
 import SEO from "@staticfuse/gatsby-theme-publisher/src/components/SEO";
-import { Box, Text, Heading, Button, Icon, Image } from "@chakra-ui/core";
+import { Box, Text, Heading, Button, Image } from "@chakra-ui/core";
 import { useStaticQuery, graphql, navigate } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 import LogosImage from "../../../../images/wp-gatsby-logos.png";
@@ -83,7 +83,7 @@ const Home = ({ location }) => {
         </BackgroundImage>
       </Box>
 
-      <Box bg="gray.50" p={4} mb={6}>
+      <Box bg="gray.50" mb={6} p={4}>
         <Box maxW="4xl" m="auto">
           <BlogOptin description="Get our full guide on building headless WordPress sites with Gatsby. Enter your email below." />
         </Box>

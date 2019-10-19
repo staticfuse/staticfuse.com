@@ -1,12 +1,15 @@
-import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import { Box } from "@chakra-ui/core"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
+import { Box } from "@chakra-ui/core";
 
 const Logo = ({ data }) => {
   const imageData = useStaticQuery(graphql`
     {
-      file(absolutePath: {regex: "/^((?!node_modules).)*$/"}, name: {eq: "site-logo"}) {
+      file(
+        absolutePath: { regex: "/^((?!node_modules).)*$/" }
+        name: { eq: "site-logo" }
+      ) {
         childImageSharp {
           fluid(maxWidth: 600) {
             ...GatsbyImageSharpFluid
@@ -14,21 +17,17 @@ const Logo = ({ data }) => {
         }
       }
     }
-  `)
+  `);
   return (
-    <Box position={["absolute", "absolute", "static"]} left="0" right="0" m={["auto", "auto","0"]} w="200px" maxW="100%" h="50px">
-      <Link
-        to="/"
-        style={{
-          overflow: "hidden",
-          height: "100%",
-          width: "100%",
-          padding: "7px 0",
-          display: "block"
-        }}
-        rel="home"
-        itemProp="url"
-      >
+    <Box
+      position={["absolute", "absolute", "static"]}
+      left="0"
+      right="0"
+      m={["auto", "auto", "0"]}
+      w="200px"
+      maxW="100%"
+      h="50px"
+    >
         <Img
           fluid={imageData.file.childImageSharp.fluid}
           alt="Site Logo"
@@ -36,12 +35,11 @@ const Logo = ({ data }) => {
           itemProp="logo"
           style={{
             height: "auto",
-            // width: "100%"
+            marginTop: "5px"
           }}
         />
-      </Link>
     </Box>
-  )
-}
+  );
+};
 
-export default Logo
+export default Logo;

@@ -3,7 +3,6 @@ import Layout from "@staticfuse/gatsby-theme-publisher/src/components/Layout";
 import SEO from "@staticfuse/gatsby-theme-publisher/src/components/SEO";
 import {
   Box,
-  Text,
   Heading,
   Stack,
   Input,
