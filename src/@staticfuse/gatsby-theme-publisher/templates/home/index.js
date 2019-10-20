@@ -63,7 +63,7 @@ const Home = ({ location }) => {
                 fontStyle="italic"
                 textShadow="-2px 2px rgba(255, 255, 0, 0.54)"
               >
-                A Framework for Headless WordPress With Gatsby
+                Headless WordPress With Gatsby
               </Heading>
               <Text color="#444" fontSize="md" mb={8} fontWeight="500">
                 Themes, plugins, and workflow tips to make headless WordPress easy for freelancers and agencies.

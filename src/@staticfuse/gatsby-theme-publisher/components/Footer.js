@@ -17,19 +17,23 @@ const Footer = () => {
         fontSize="sm"
         justifyContent="space-between"
       >
-        <Box w="50%">
+        <Box w="60%">
           <Heading as="h4" fontSize="xl" color="headings">
             Menu
           </Heading>
           <Box
             display="grid"
-            gridTemplateColumns="repeat(auto-fill, minmax(100px, 1fr))"
-            gridColumnGap="20px"
+            gridTemplateColumns="repeat(auto-fill, minmax(50px, 1fr))"
+            gridColumnGap="10px"
             gridRowGap="5px"
+            fontWeight="500"
+            fontSize="base"
+            color="footerText"
           >
-            <Box fontWeight="500" fontSize="base" color="footerText" py={1}>
-              <Link to="/blog">Blog</Link>
-            </Box>
+            <Link to="/">Home</Link>
+            <Link to="/blog">Blog</Link>
+            <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
           </Box>
         </Box>
 
