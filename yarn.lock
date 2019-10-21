@@ -1328,10 +1328,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
-"@staticfuse/gatsby-theme-publisher@^0.10.4":
-  version "0.10.4"
-  resolved "https://registry.yarnpkg.com/@staticfuse/gatsby-theme-publisher/-/gatsby-theme-publisher-0.10.4.tgz#53c72c7f1385d4143f8a35843d81109c3f67cf7c"
-  integrity sha512-eMdgW4kvWzuqU0z5s+L+O9b6OynZFqQBGR8GkgI4H7jYKt9h5sqkH0XheNUyjWTvIB332/tTUmEJhNgpWcyDSA==
+"@staticfuse/gatsby-theme-publisher@^0.10.5":
+  version "0.10.5"
+  resolved "https://registry.yarnpkg.com/@staticfuse/gatsby-theme-publisher/-/gatsby-theme-publisher-0.10.5.tgz#4c0a2430065ad3ee20c67df33acc1b2dd7ca1978"
+  integrity sha512-GwNPCnEcz14WL9N/8qUK1OVK5rWStyGTBz38xIxDkn8ocEVMf+ipkxPcOD2ZXfL/Lp5K+GGUCPK0SlJR0nYL/g==
   dependencies:
     "@chakra-ui/core" "^0.3.2"
     "@emotion/core" "^10.0.17"
@@ -1340,6 +1340,8 @@
     apollo-link-context "^1.0.19"
     chalk "^2.4.2"
     emotion-theming "^10.0.17"
+    eslint-plugin-react-hooks "^1.7.0"
+    gatsby "^2.15.5"
     gatsby-background-image "^0.8.12"
     gatsby-image "^2.2.29"
     gatsby-plugin-google-analytics "^2.1.23"
@@ -1350,6 +1352,7 @@
     gatsby-source-filesystem "^2.1.33"
     gatsby-source-graphql "^2.1.20"
     gatsby-transformer-sharp "^2.2.16"
+    graphql "^14.3.1"
     graphql-tag "^2.10.1"
     isomorphic-fetch "^2.2.1"
     react-apollo "^3.0.0"
@@ -5875,7 +5878,7 @@ gatsby-transformer-sharp@^2.2.16:
     semver "^5.7.1"
     sharp "^0.23.1"
 
-gatsby@^2.15.34:
+gatsby@^2.15.34, gatsby@^2.15.5:
   version "2.16.5"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.16.5.tgz#155376fd8d797ba111772d168daecd4a5ba036ef"
   integrity sha512-ga7WX773yCouxVPTUgswkjnHkFMWsIuHyOfGzprqdI8EJ74oEkBfcDUZTntbXDuP20IUGomve6sUOJLwZMdReA==
@@ -6355,7 +6358,7 @@ graphql-type-json@^0.2.4:
   resolved "https://registry.yarnpkg.com/graphql-type-json/-/graphql-type-json-0.2.4.tgz#545af27903e40c061edd30840a272ea0a49992f9"
   integrity sha512-/tq02ayMQjrG4oDFDRLLrPk0KvJXue0nVXoItBe7uAdbNXjQUu+HYCBdAmPLQoseVzUKKMzrhq2P/sfI76ON6w==
 
-graphql@^14.5.8:
+graphql@^14.3.1, graphql@^14.5.8:
   version "14.5.8"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-14.5.8.tgz#504f3d3114cb9a0a3f359bbbcf38d9e5bf6a6b3c"
   integrity sha512-MMwmi0zlVLQKLdGiMfWkgQD7dY/TUKt4L+zgJ/aR0Howebod3aNgP5JkgvAULiR2HPVZaP2VEElqtdidHweLkg==
