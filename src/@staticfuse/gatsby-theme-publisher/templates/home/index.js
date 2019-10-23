@@ -199,6 +199,9 @@ const Home = ({ location }) => {
               integrations. These are all problems we’d like to solve, in a way
               that can be reliable for freelancers and agencies.
             </Text>
+            <Button onClick={ () => navigate('/blog/what-is-static-fuse/')} rounded="full" variant="outline" variantColor="blue" rightIcon="arrow-forward">
+              A short podcast about Static Fuse
+            </Button>
           </Box>
         </Box>
       </Box>
