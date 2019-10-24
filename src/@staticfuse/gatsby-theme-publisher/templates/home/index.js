@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "@staticfuse/gatsby-theme-publisher/src/components/Layout";
 import SEO from "@staticfuse/gatsby-theme-publisher/src/components/SEO";
 import { Box, Text, Heading, Button, Image } from "@chakra-ui/core";
-import { useStaticQuery, graphql, navigate } from "gatsby";
+import { useStaticQuery, graphql, navigate, Link } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 import LogosImage from "../../../../images/wp-gatsby-logos.png";
 import PublisherHero from "../../../../images/publisher-hero.jpg";
@@ -68,7 +68,7 @@ const Home = ({ location }) => {
               <Text color="#444" fontSize="md" mb={8} fontWeight="500">
                 Themes, plugins, and workflow tips to make headless WordPress easy for freelancers and agencies.
               </Text>
-              {/* <Button
+              <Button
                 onClick={ () => navigate('/blog/how-to-build-headless-wordpress-sites-with-gatsby/')}
                 bg="pink"
                 rightIcon="arrow-forward"
@@ -76,8 +76,8 @@ const Home = ({ location }) => {
                 mb={[2, "0"]}
                 rounded="full"
               >
-                Start Here
-              </Button> */}
+                Get Started
+              </Button>
             </Box>
           </Box>
         </BackgroundImage>
@@ -109,11 +109,11 @@ const Home = ({ location }) => {
             </Heading>
             <Text color="gray.500">
               The Publisher theme is a customizable framework that helps you
-              create a static site from your WordPress data. It does all the heavy lifting so you can focus on designing and customizing your site. Learn how to use it in our tutorial.
+              create a static site from your WordPress data. It does all the heavy lifting so you can focus on designing and customizing your site. View on <Box as="a" href="https://github.com/staticfuse/create-gatsby-theme-publisher" target="_blank" rel="noopener noreferrer" color="links">Github</Box>, or learn how to use it <Link style={{color:"#1eb4f3"}} to='/blog/how-to-build-headless-wordpress-sites-with-gatsby/'>in our tutorial.</Link>
             </Text>
-            <Button onClick={ () => navigate('/blog/how-to-build-headless-wordpress-sites-with-gatsby/')} rounded="full" variant="outline" variantColor="blue" rightIcon="arrow-forward">
-              Learn More
-            </Button>
+            {/* <Button onClick={ () => window.open('https://github.com/staticfuse/create-gatsby-theme-publisher', '_blank')} rounded="full" variant="outline" variantColor="blue" rightIcon="arrow-forward">
+              Get the theme
+            </Button> */}
           </Box>
         </Box>
       </Box>
@@ -155,7 +155,7 @@ const Home = ({ location }) => {
                 Toolkit Plugin
               </Heading>
               <Text color="gray.500">
-                The Gatsby Toolkit plugin for WordPress handles automated
+                The <Box as="a" color="links" href="https://github.com/staticfuse/gatsby-toolkit" target="_blank" rel="noopener noreferrer">Gatsby Toolkit plugin for WordPress</Box> handles automated
                 deployment for your site. More features are coming soon.
               </Text>
             </Box>

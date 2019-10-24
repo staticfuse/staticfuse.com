@@ -8,7 +8,7 @@ const publisherTheme = {
     // primary: theme.colors.orange["500"],
     // muted: "#999",
     // headings: "#2D3748",
-    // links: theme.colors.blue,
+    links: "#1eb4f3",
     // navLink: "#ffffff",
     // headerBg: theme.colors.orange["500"],
     pink: "#f967b8",

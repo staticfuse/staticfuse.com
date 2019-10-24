@@ -15,7 +15,29 @@ module.exports = {
         dynamicComments: 1,
         gaTrackingId: "UA-150753228-1",
         wordPressUrl: `https://data.staticfuse.com`,
-        blogURI: '/blog'
+        blogURI: '/blog',
+        publisherMenuConfig: [
+          {
+            label: 'Home',
+            url: '/',
+            isExternal: false,
+          },
+          {
+            label: 'Learn',
+            url: '/blog/how-to-build-headless-wordpress-sites-with-gatsby/',
+            isExternal: false,
+          },
+          {
+            label: 'Blog',
+            url: '/blog',
+            isExternal: false,
+          },
+          {
+            label: 'About',
+            url: '/about',
+            isExternal: false,
+          },
+        ],
       },
     },
   ],

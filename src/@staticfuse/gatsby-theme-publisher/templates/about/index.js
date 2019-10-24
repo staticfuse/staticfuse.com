@@ -70,7 +70,7 @@ const About = ({ location }) => {
               <Box p={2}>
                 <Heading
                   as="h4"
-                  my={2}
+                  my={4}
                   fontSize="lg"
                   fontWeight="400"
                   color="gray.600"
@@ -78,6 +78,7 @@ const About = ({ location }) => {
                 >
                   Justin Hall
                 </Heading>
+                <Text color="#999">Justin works with Gatsby at SendGrid, he also created the Littlebot Netlify plugin (now called Gatsby Toolkit).</Text>
               </Box>
                 <Button
                   onClick={() => window.open(`https://twitter.com/justinwhall`)}
@@ -116,7 +117,7 @@ const About = ({ location }) => {
               <Box p={2}>
                 <Heading
                   as="h4"
-                  my={2}
+                  my={4}
                   fontSize="lg"
                   fontWeight="400"
                   color="gray.600"
@@ -124,6 +125,7 @@ const About = ({ location }) => {
                 >
                   Scott Bolinger
                 </Heading>
+                <Text color="#999">Scott has 4+ years of experience building headless WordPress apps, working with mobile apps at AppPresser.</Text>
               </Box>
                 <Button
                   onClick={() =>
