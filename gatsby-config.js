@@ -38,6 +38,11 @@ module.exports = {
             url: '/about',
             isExternal: false,
           },
+          {
+            label: 'Docs',
+            url: '/docs/getting-started',
+            isExternal: false,
+          },
         ],
       },
     },
