@@ -7,6 +7,7 @@ module.exports = {
     siteUrl: `https://staticfuse.com`,
   },
   plugins: [
+    `@staticfuse/gatsby-theme-docs`,
     {
       resolve: `@staticfuse/gatsby-theme-publisher`,
       options: {
