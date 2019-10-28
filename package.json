@@ -10,7 +10,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@staticfuse/gatsby-theme-publisher": "^0.10.8",
+    "@staticfuse/gatsby-theme-publisher": "^0.10.10",
     "gatsby": "^2.15.34",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
