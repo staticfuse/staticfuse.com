@@ -29,6 +29,11 @@ module.exports = {
             isExternal: false,
           },
           {
+            label: 'Docs',
+            url: '/docs',
+            isExternal: false,
+          },
+          {
             label: 'Blog',
             url: '/blog',
             isExternal: false,

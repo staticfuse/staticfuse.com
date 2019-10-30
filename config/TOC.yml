@@ -1,19 +1,28 @@
-- label: Getting Started
-  path: /docs/getting-started
+- label: Welcome
+  path: /docs/
   isHeader: false
 
-- label: 'Adding to existing project'
-  path: '/docs/adding-to-existing-project'
+- label: Installing the Publisher Theme
+  path: /docs/installation
   isHeader: false
 
-- label: Section Header
-  path: /docs/getting-started
-  isHeader: true
-  childItems:
-    - label: child link one
-      path: /docs/child-one
-      isHeader: false
-    - label: child link two
-      path: /docs/child-two
-      isHeader: false
+- label: Theme Options
+  path: /docs/theme-options
+  isHeader: false
+
+- label: Theme Customization
+  path: /docs/theme-customization
+  isHeader: false
+
+- label: Menu Configuration
+  path: /docs/menu-configuration
+  isHeader: false
+
+- label: Component Shadowing
+  path: /docs/component-shadowing
+  isHeader: false
+
+- label: Publishing to Netlify
+  path: /docs/publishing
+  isHeader: false
 
