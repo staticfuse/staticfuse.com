@@ -1328,29 +1328,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
-"@staticfuse/gatsby-theme-docs@^0.9.2":
-  version "0.9.2"
-  resolved "https://registry.yarnpkg.com/@staticfuse/gatsby-theme-docs/-/gatsby-theme-docs-0.9.2.tgz#71d385880049b5f53e44c2ff3cb4037d099cb42b"
-  integrity sha512-X+rKh0nmnLjtLFKNLJMdjEe/AA8K3qLJ8X2bzpoAZ83MWWO9KaEObacnrRp/sh5FVL4FEQZdGDuHnpBYzw0/Lw==
-  dependencies:
-    "@chakra-ui/core" "^0.3.2"
-    "@emotion/core" "^10.0.17"
-    "@emotion/styled" "^10.0.17"
-    gatsby-remark-copy-linked-files "^2.1.28"
-    gatsby-remark-images "^3.1.28"
-    gatsby-remark-prismjs "^3.3.20"
-    gatsby-remark-responsive-iframe "^2.2.25"
-    gatsby-remark-smartypants "^2.1.14"
-    gatsby-source-filesystem "^2.1.33"
-    gatsby-transformer-remark "^2.6.30"
-    gatsby-transformer-sharp "^2.2.23"
-    gatsby-transformer-yaml "^2.2.15"
-    prismjs "^1.17.1"
-
-"@staticfuse/gatsby-theme-publisher@^0.10.9":
-  version "0.10.9"
-  resolved "https://registry.yarnpkg.com/@staticfuse/gatsby-theme-publisher/-/gatsby-theme-publisher-0.10.9.tgz#6137c459121594c23ed9bc77f920b416e4693938"
-  integrity sha512-n7fPaosnjLixvZpAnOFYgDFaSaOhyBKCOxDRVx5FrwO2i4nqNtGP4uf4XrYw5H0NNUjbZREd0FViloM8vdpbgA==
+"@staticfuse/gatsby-theme-publisher@^0.10.10":
+  version "0.10.10"
+  resolved "https://registry.yarnpkg.com/@staticfuse/gatsby-theme-publisher/-/gatsby-theme-publisher-0.10.10.tgz#7ca1e2975c137a63f72a8a51bf46534c73ea2800"
+  integrity sha512-AqaOVcOUGQx3GvEbctT2HCeFEJr8eAgBPhQNVWhshJ301/74Frhi3JkVHsY0eynwIjE9d5N8X0CnBnnYxnH0+w==
   dependencies:
     "@chakra-ui/core" "^0.3.2"
     "@emotion/core" "^10.0.17"
